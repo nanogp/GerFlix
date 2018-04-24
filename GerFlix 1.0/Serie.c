@@ -1,4 +1,5 @@
 #include "Serie.h"
+#include "General.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -44,14 +45,17 @@ void inicializarSeriesHardCode(eSerie series[])
 
 void mostrarSerie(eSerie serie)
 {
-    printf("\n%-20s - Genero: %-10s - Cant. temporadas: %d", serie.nombre, serie.genero, serie.cantidadTemporadas);
+    printf("\n%-10s - Genero: %-10s - Cant. temporadas: %d", serie.nombre, serie.genero, serie.cantidadTemporadas);
 }
 
 void mostrarListaSeries(eSerie listaSeries[], int cant)
 {
     int i;
+    char titulo[LARGO_TITULO] = {"LISTADO DE SERIES"};
 
-    imprimirEnPantalla("\n+-------------------+\n| LISTADO DE SERIES |\n+-------------------+");
+    generarTitulo(titulo);
+    imprimirEnPantalla(titulo);
+
     for(i=0 ; i<cant ; i++)
     {
         if(listaSeries[i].estado == 1)

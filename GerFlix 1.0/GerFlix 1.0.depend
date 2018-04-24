@@ -16,27 +16,30 @@
 1524580030 source:c:\test\scarafilo\gerflix 1.0\usuario.c
 	"Usuario.h"
 
-1524602914 source:d:\github\gerflix\gerflix 1.0\serie.c
+1524609233 source:d:\github\gerflix\gerflix 1.0\serie.c
 	"Serie.h"
+	"General.h"
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
 
 1524600570 d:\github\gerflix\gerflix 1.0\serie.h
 
-1524602898 source:d:\github\gerflix\gerflix 1.0\usuario.c
+1524609177 source:d:\github\gerflix\gerflix 1.0\usuario.c
 	"Usuario.h"
+	"General.h"
 	<string.h>
 	<stdio.h>
 
 1524601013 d:\github\gerflix\gerflix 1.0\usuario.h
 
-1524600488 source:d:\github\gerflix\gerflix 1.0\general.c
+1524609335 source:d:\github\gerflix\gerflix 1.0\general.c
+	"General.h"
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1524602540 source:d:\github\gerflix\gerflix 1.0\main.c
+1524608805 source:d:\github\gerflix\gerflix 1.0\main.c
 	<stdio.h>
 	<stdlib.h>
 	"General.h"
@@ -44,9 +47,9 @@
 	"Usuario.h"
 	"Procesamiento.h"
 
-1524600411 d:\github\gerflix\gerflix 1.0\general.h
+1524608944 d:\github\gerflix\gerflix 1.0\general.h
 
-1524603089 source:d:\github\gerflix\gerflix 1.0\procesamiento.c
+1524609288 source:d:\github\gerflix\gerflix 1.0\procesamiento.c
 	"Serie.h"
 	"Usuario.h"
 	"General.h"

@@ -1,6 +1,7 @@
 #define DEFINIR_MACRO_STRING(nombre_macro) #nombre_macro
 #define LIMPIAR_PANTALLA DEFINIR_MACRO_STRING(cls)
 #define HACER_PAUSA DEFINIR_MACRO_STRING(pause)
+#define LARGO_TITULO 1000
 
 
 /** \brief corre comandos en la consola del sistema operativo
@@ -76,3 +77,5 @@ int buscarEnArrayInt(const int, const int[], const int);
  *
  */
 void imprimirEnPantalla(const char *);
+
+void generarTitulo(char *titulo);

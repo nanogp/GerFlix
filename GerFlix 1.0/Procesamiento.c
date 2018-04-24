@@ -7,15 +7,18 @@ void mostrarListaSeriePorUsuario(eSerie listaSeries[], eUsuario listaUsuarios[],
 {
     int i;
     int j;
+    char titulo[LARGO_TITULO] = {"LISTADO DE SERIES POR CADA USUARIO"};
+    generarTitulo(titulo);
 
     ejecutarEnConsola(LIMPIAR_PANTALLA);
-    imprimirEnPantalla("LISTADO DE SERIES POR CADA USUARIO");
+
+    imprimirEnPantalla(titulo);
 
     for(i=0 ; i<cantUsuario ; i++)
     {
         if(listaUsuarios[i].estado == 1)
         {
-            imprimirEnPantalla("\n+--------------------+\n| SERIES DEL USUARIO |\n+--------------------+");
+            imprimirEnPantalla(titulo);
             mostrarUsuario(listaUsuarios[i]);
 
             for(j=0 ; j<cantSerie ; j++)

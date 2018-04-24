@@ -1,6 +1,8 @@
+#include "General.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 
 void ejecutarEnConsola(const char *lineaDeComando)
 {
@@ -99,5 +101,31 @@ int buscarEnArrayInt(const int buscar, const int array[], const int cant)
 
 void imprimirEnPantalla(const char *texto)
 {
-    printf("\n%s", texto);
+    printf("%s", texto);
+}
+
+void generarTitulo(char *titulo)
+{
+    int i;
+    char nuevoTitulo[LARGO_TITULO] = "| ";
+
+    strcat(nuevoTitulo, titulo);
+    strcat(nuevoTitulo, " |");
+
+    strcpy(titulo, "\n+");
+    for(i=0 ; i<strlen(nuevoTitulo)-2 ; i++)
+    {
+        strcat(titulo, "-");
+    }
+    strcat(titulo, "+\n");
+
+    strcat(titulo, nuevoTitulo);
+
+    strcat(titulo, "\n+");
+    for(i=0 ; i<strlen(nuevoTitulo)-2 ; i++)
+    {
+        strcat(titulo, "-");
+    }
+    strcat(titulo, "+");
+
 }
