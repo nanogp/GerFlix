@@ -1,5 +1,6 @@
 #include "Usuario.h"
 #include <string.h>
+#include <stdio.h>
 
 void inicializarUsuariosEstado(eUsuario usuarios[], int cant)
 {
@@ -30,5 +31,24 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
         usuarios[i].estado = 1;
         strcpy(usuarios[i].nombre, nombre[i]);
 
+    }
+}
+
+void mostrarUsuario(eUsuario usuario)
+{
+    printf("\n%s", usuario.nombre);
+}
+
+void mostrarListaUsuarios(eUsuario listaUsuarios[], int cant)
+{
+    int i;
+
+    imprimirEnPantalla("\n+---------------------+\n| LISTADO DE USUARIOS |\n+---------------------+");
+    for(i=0 ; i<cant ; i++)
+    {
+        if(listaUsuarios[i].estado == 1)
+        {
+            mostrarUsuario(listaUsuarios[i]);
+        }
     }
 }

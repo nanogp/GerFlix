@@ -44,13 +44,14 @@ void inicializarSeriesHardCode(eSerie series[])
 
 void mostrarSerie(eSerie serie)
 {
-    printf("\nNombre: %s - Genero: %s - Cant. temporadas: %d", serie.nombre, serie.genero, serie.cantidadTemporadas);
+    printf("\n%-20s - Genero: %-10s - Cant. temporadas: %d", serie.nombre, serie.genero, serie.cantidadTemporadas);
 }
 
 void mostrarListaSeries(eSerie listaSeries[], int cant)
 {
     int i;
 
+    imprimirEnPantalla("\n+-------------------+\n| LISTADO DE SERIES |\n+-------------------+");
     for(i=0 ; i<cant ; i++)
     {
         if(listaSeries[i].estado == 1)

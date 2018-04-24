@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "General.h"
 #include "Serie.h"
 #include "Usuario.h"
+#include "Procesamiento.h"
 
 int main()
 {
@@ -14,6 +16,20 @@ int main()
     inicializarUsuariosHardCode(listaDeUsuarios);
 
     mostrarListaSeries(listaDeSeries, TAMSERIE);
+    ejecutarEnConsola(HACER_PAUSA);
+
+    ejecutarEnConsola(LIMPIAR_PANTALLA);
+    mostrarListaUsuarios(listaDeUsuarios, TAMUSUARIO);
+    ejecutarEnConsola(HACER_PAUSA);
+
+    ejecutarEnConsola(LIMPIAR_PANTALLA);
+    mostrarListaSeriePorUsuario(listaDeSeries,listaDeUsuarios, TAMSERIE, TAMUSUARIO);
+    ejecutarEnConsola(HACER_PAUSA);
+
+    ejecutarEnConsola(LIMPIAR_PANTALLA);
+    mostrarListaUsuariosPorSerie(listaDeSeries, listaDeUsuarios, TAMSERIE, TAMUSUARIO);
+    ejecutarEnConsola(HACER_PAUSA);
+
     /*
 
     1. Mostrar el listado de series
