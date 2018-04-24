@@ -1,3 +1,4 @@
+#define TAMSERIE 20
 
 typedef struct
 {
@@ -11,4 +12,4 @@ typedef struct
 void inicializarSeriesEstado(eSerie[], int);
 void inicializarSeriesHardCode(eSerie[]);
 void mostrarListaSeries(eSerie[], int);
-
+void mostrarSerie(eSerie);

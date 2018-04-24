@@ -1,3 +1,4 @@
+#define TAMUSUARIO 100
 
 typedef struct
 {

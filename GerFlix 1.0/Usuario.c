@@ -1,5 +1,5 @@
-
 #include "Usuario.h"
+#include <string.h>
 
 void inicializarUsuariosEstado(eUsuario usuarios[], int cant)
 {

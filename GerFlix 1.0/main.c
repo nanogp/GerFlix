@@ -2,9 +2,6 @@
 #include <stdlib.h>
 #include "Serie.h"
 #include "Usuario.h"
-#define TAMSERIE 20
-#define TAMUSUARIO 100
-
 
 int main()
 {
@@ -16,6 +13,7 @@ int main()
     inicializarUsuariosEstado(listaDeUsuarios,TAMUSUARIO);
     inicializarUsuariosHardCode(listaDeUsuarios);
 
+    mostrarListaSeries(listaDeSeries, TAMSERIE);
     /*
 
     1. Mostrar el listado de series
@@ -26,10 +24,6 @@ int main()
 
 
     */
-
-
-
-
 
 
     return 0;
