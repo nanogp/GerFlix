@@ -35,6 +35,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="General.h" />
+		<Unit filename="Procesamiento.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Procesamiento.h" />
 		<Unit filename="Serie.c">
 			<Option compilerVar="CC" />
 		</Unit>
